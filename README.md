@@ -1,4 +1,4 @@
-# 📚 School Management Database System Design Project
+# 📚 School Management Database System 
 
 ## 📌 Project Overview
 
