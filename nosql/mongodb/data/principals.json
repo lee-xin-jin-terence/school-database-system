@@ -1,0 +1,44 @@
+[
+  {
+    "schoolId": 1,
+    "firstName": "James",
+    "lastName": "Lim",
+    "startDate": "2020-01-10",
+    "endDate": null
+  },
+  {
+    "schoolId": 2,
+    "firstName": "Aisha",
+    "lastName": "Yusof",
+    "startDate": "2019-03-15",
+    "endDate": "2022-12-31"
+  },
+  {
+    "schoolId": 2,
+    "firstName": "Siti",
+    "lastName": "Zainal",
+    "startDate": "2023-01-01",
+    "endDate": null
+  },
+  {
+    "schoolId": 3,
+    "firstName": "Marcus",
+    "lastName": "Goh",
+    "startDate": "2021-08-01",
+    "endDate": null
+  },
+  {
+    "schoolId": 4,
+    "firstName": "Daniel",
+    "lastName": "Sim",
+    "startDate": "2023-06-20",
+    "endDate": null
+  },
+  {
+    "schoolId": 5,
+    "firstName": "Serene",
+    "lastName": "Ng",
+    "startDate": "2022-11-30",
+    "endDate": null
+  }
+]
