@@ -38,6 +38,13 @@ This project models a relational **School Management Database System**. It is de
 - **Subject**: title, type
 - **Management**: start date of management for the teacher managing the school
 
+## 🖼️ Entity-Relationship Diagram (ERD)
+
+![Copy of IDDD flowchart7 (1) (6) drawio (4)](https://github.com/user-attachments/assets/d65e9911-7c1e-444a-b497-5d6394a21389)
+
+
+This ERD illustrates the relationships among schools, teachers, students, and subjects as described above.
+
 ## 🛠️ Tools & Technologies
 
 - **Database**: MySQL
@@ -47,7 +54,7 @@ This project models a relational **School Management Database System**. It is de
 
 ## 📁 Project Structure
 
-```
+\`\`\`
 school-database-design/
 ├── ERD/
 │   └── school_erd.png
@@ -61,7 +68,7 @@ school-database-design/
 │   └── project_overview.md
 │
 └── README.md
-```
+\`\`\`
 
 ## 🧠 Learning Outcomes
 
@@ -72,10 +79,8 @@ school-database-design/
 
 ## ✅ How to Use
 
-1. Review the ERD diagram under the `ERD/` folder.
-2. View or edit table definitions in `schema/create_tables.sql`.
-3. Load sample data from `schema/insert_sample_data.sql`.
-4. Reference `documentation/data_dictionary.md` for field-level details.
+1. Review the ERD diagram under the \`ERD/\` folder.
+2. View or edit table definitions in \`schema/create_tables.sql\`.
+3. Load sample data from \`schema/insert_sample_data.sql\`.
+4. Reference \`documentation/data_dictionary.md\` for field-level details.
 5. Connect the database to your preferred RDBMS to test queries and relationships.
-
-
