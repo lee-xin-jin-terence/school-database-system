@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Greenfield Secondary School",
+    "town": "Bedok",
+    "street": "123 East Avenue",
+    "postcode": "460123",
+    "phoneNumber": "6123-4567"
+  },
+  {
+    "name": "North Ridge High School",
+    "town": "Woodlands",
+    "street": "456 North Road",
+    "postcode": "738456",
+    "phoneNumber": "6892-1134"
+  },
+  {
+    "name": "Sunshine Primary School",
+    "town": "Tampines",
+    "street": "789 Sunshine Blvd",
+    "postcode": "529789",
+    "phoneNumber": "6345-9988"
+  },
+  {
+    "name": "Westlake International School",
+    "town": "Bukit Batok",
+    "street": "321 Hillview Drive",
+    "postcode": "659321",
+    "phoneNumber": "6899-7744"
+  },
+  {
+    "name": "Meridian Secondary School",
+    "town": "Pasir Ris",
+    "street": "987 Meridian Walk",
+    "postcode": "519987",
+    "phoneNumber": "6587-2233"
+  }
+]
