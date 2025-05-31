@@ -9,14 +9,11 @@ CREATE TABLE School (
 
 
 
-
 CREATE TABLE Subject (
     subjectId INT IDENTITY(1,1) PRIMARY KEY,
     subjectTitle NVARCHAR(100) NOT NULL,
     subjectType NVARCHAR(50) NOT NULL   
 );
-
-
 
 
 
@@ -29,10 +26,6 @@ CREATE TABLE Student (
     schoolId INT NOT NULL,
     FOREIGN KEY (schoolId) REFERENCES School(schoolId)
 );
-
-
-
-
 
 
 
