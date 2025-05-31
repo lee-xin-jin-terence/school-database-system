@@ -1,4 +1,7 @@
--- Retrieve all past principals along with their school name and tenure in days
+-- Query: Retrieve all past principals with their school name and tenure in days
+-- Description: Lists principals who have ended their tenure, showing their first and last names, associated school, start and end dates, and calculates the tenure duration in days.
+-- Use Case: Useful for historical reporting on school leadership and analyzing principal tenure lengths.
+
 SELECT
     p.firstName,
     p.lastName,
