@@ -1,4 +1,5 @@
--- Description: Lists each teacher's subjects along with the total hours taught per year.
+-- Query: List each teacher's subjects with total hours taught per year
+-- Description: Aggregates the total teaching hours for each teacher by subject and year.
 -- Use Case: Useful for evaluating teacher workload and subject coverage annually.
 
 SELECT
