@@ -40,7 +40,8 @@ This project models a relational **School Management Database System**. It is de
 
 ## 🖼️ Entity-Relationship Diagram (ERD)
 
-![Copy of IDDD flowchart7 (1) (6) drawio (4)](https://github.com/user-attachments/assets/d65e9911-7c1e-444a-b497-5d6394a21389)
+![Copy of IDDD flowchart7 (1) (6) drawio (5)](https://github.com/user-attachments/assets/238159fc-66ee-4828-bd09-884b67fd132c)
+
 
 
 This ERD illustrates the relationships among schools, teachers, students, and subjects as described above.
@@ -54,7 +55,7 @@ This ERD illustrates the relationships among schools, teachers, students, and su
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 school-database-design/
 ├── ERD/
 │   └── school_erd.png
@@ -68,7 +69,7 @@ school-database-design/
 │   └── project_overview.md
 │
 └── README.md
-\`\`\`
+```
 
 ## 🧠 Learning Outcomes
 
