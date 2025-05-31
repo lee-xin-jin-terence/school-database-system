@@ -1,5 +1,6 @@
--- Description: Counts the total number of students enrolled in each school.
--- Use Case: Helps the administration track student population size by school.
+-- Query: Count total number of students enrolled in each school
+-- Description: Counts the total number of students per school, including schools with zero students.
+-- Use Case: Helps administration track student population size by school.
 
 SELECT 
     sc.schoolId,
