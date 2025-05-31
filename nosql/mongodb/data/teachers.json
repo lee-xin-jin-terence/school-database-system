@@ -1,0 +1,107 @@
+[
+  {
+    "firstName": "James",
+    "lastName": "Lim",
+    "gender": "M",
+    "qualifications": "B.Ed, M.Ed",
+    "schoolId": 1
+  },
+  {
+    "firstName": "Aisha",
+    "lastName": "Yusof",
+    "gender": "F",
+    "qualifications": "B.Sc, PGDE",
+    "schoolId": 2
+  },
+  {
+    "firstName": "Rajesh",
+    "lastName": "Nair",
+    "gender": "M",
+    "qualifications": "M.Sc, B.Ed",
+    "schoolId": 3
+  },
+  {
+    "firstName": "Chloe",
+    "lastName": "Tan",
+    "gender": "F",
+    "qualifications": "B.A., PGDE",
+    "schoolId": 1
+  },
+  {
+    "firstName": "Imran",
+    "lastName": "Abdullah",
+    "gender": "M",
+    "qualifications": "B.Ed",
+    "schoolId": 2
+  },
+  {
+    "firstName": "Siti",
+    "lastName": "Zainal",
+    "gender": "F",
+    "qualifications": "B.A., M.Ed",
+    "schoolId": 3
+  },
+  {
+    "firstName": "Marcus",
+    "lastName": "Goh",
+    "gender": "M",
+    "qualifications": "B.Sc",
+    "schoolId": 4
+  },
+  {
+    "firstName": "Anita",
+    "lastName": "Menon",
+    "gender": "F",
+    "qualifications": "M.A., PGDE",
+    "schoolId": 5
+  },
+  {
+    "firstName": "Vinod",
+    "lastName": "Das",
+    "gender": "M",
+    "qualifications": "PhD, B.Ed",
+    "schoolId": 5
+  },
+  {
+    "firstName": "Wei Ling",
+    "lastName": "Ong",
+    "gender": "F",
+    "qualifications": "B.Ed",
+    "schoolId": 1
+  },
+  {
+    "firstName": "Daniel",
+    "lastName": "Sim",
+    "gender": "M",
+    "qualifications": "M.Sc",
+    "schoolId": 4
+  },
+  {
+    "firstName": "Meena",
+    "lastName": "Ravi",
+    "gender": "F",
+    "qualifications": "B.Ed, M.Ed",
+    "schoolId": 2
+  },
+  {
+    "firstName": "Hakim",
+    "lastName": "Rahmat",
+    "gender": "M",
+    "qualifications": "B.Sc, PGDE",
+    "schoolId": 3
+  },
+  {
+    "firstName": "Serene",
+    "lastName": "Ng",
+    "gender": "F",
+    "qualifications": "B.Ed",
+    "schoolId": 5
+  },
+  {
+    "firstName": "Arjun",
+    "lastName": "Reddy",
+    "gender": "M",
+    "qualifications": "B.Tech, M.Ed",
+    "schoolId": 4
+  }
+]
