@@ -42,7 +42,7 @@ The system demonstrates core database design concepts such as entity-relationshi
 ## 📁 Project Structure
 
 ```plaintext
-school-database-design/
+school-database-system/
 │
 ├── sql/
 │   ├── sql_server/
