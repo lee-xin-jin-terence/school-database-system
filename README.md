@@ -1,87 +1,62 @@
-# 📚 School Management Database System 
+# 📚 School Management Database System
 
 ## 📌 Project Overview
 
-This project models a relational **School Management Database System**. It is designed to capture relationships between schools, teachers, students, and subjects. The aim is to demonstrate core database design concepts such as:
+This project models a relational **School Management Database System** that captures relationships between schools, teachers, students, subjects, and principals. The schema is designed to be portable and has been implemented in multiple SQL dialects, including:
 
-- Entity-Relationship Modelling (ERD)
-- Data dictionary creation
-- SQL schema implementation
-- Sample data population
+- SQL Server 
+- MySQL   
+- Oracle  
+- PostgreSQL  
+- SQLite  
+
+The system demonstrates core database design concepts such as entity-relationship modeling, data dictionary creation, SQL schema implementation, and sample data population.
 
 ## 🎯 Objectives
 
-- Design a normalized relational database schema for a school management system.
-- Create an Entity-Relationship Diagram (ERD) with clearly defined attributes, primary keys, and foreign keys.
-- Develop a comprehensive data dictionary describing each entity and attribute.
-- Implement the schema in SQL and populate each table with meaningful sample data.
+- Design a normalized relational database schema for a school management system.  
+- Implement and maintain compatible schemas across five major SQL database systems.  
+- Track teaching records per term and year, student subject results with marks and grades.  
+- Manage school principals with their tenure periods.  
+- Provide comprehensive documentation including a data dictionary, sample data, and example queries.  
 
 ## 🗂️ System Features
 
-- Each **school** has many teachers and students.
-- Each **teacher**:
-  - Works for one school only.
-  - Can teach multiple subjects.
-- Each **student**:
-  - Belongs to one school only.
-  - Can study multiple subjects.
-- Each **subject**:
-  - Can be taught by multiple teachers.
-  - Can be studied by multiple students.
-- Each **school** is managed by one teacher, with the start date of their management recorded.
-
-### Data Tracked:
-
-- **School**: code, name, address (town, street, postcode), phone
-- **Teacher**: tax file number, first name, last name, gender, qualifications, hours taught per subject
-- **Student**: student number, first name, last name, gender, date of birth
-- **Subject**: title, type
-- **Management**: start date of management for the teacher managing the school
-
-## 🖼️ Entity-Relationship Diagram (ERD)
-
-![Copy of IDDD flowchart7 (1) (6) drawio (5)](https://github.com/user-attachments/assets/238159fc-66ee-4828-bd09-884b67fd132c)
-
-
-
-This ERD illustrates the relationships among schools, teachers, students, and subjects as described above.
-
-## 🛠️ Tools & Technologies
-
-- **Database**: MySQL
-- **Design Tools**: Draw.io 
-- **Language**: SQL
-- **Documentation**: Markdown
+- Each **school** has many teachers and students.  
+- Each **teacher**:  
+  - Works for one school only.  
+  - Can teach multiple subjects across different terms and years.  
+- Each **student**:  
+  - Belongs to one school only.  
+  - Can study multiple subjects.  
+- Each **subject**:  
+  - Can be taught by multiple teachers.  
+  - Can be studied by multiple students.  
+- Principals manage schools for specific periods with start and optional end dates.  
+- Detailed term- and year-based teaching hours and student results are recorded.  
 
 ## 📁 Project Structure
 
-```
+```plaintext
 school-database-design/
-├── ERD/
-│   └── school_erd.png
 │
-├── schema/
-│   ├── create_tables.sql
-│   └── insert_sample_data.sql
-│
-├── documentation/
-│   ├── data_dictionary.md
-│   └── project_overview.md
+├── sql/
+│   ├── sql_server/
+│       ├── schema
+│       ├── data
+│       ├── queries
+│       ├── data_dictionary.md
+│ 
+│   ├── oracle/
+│       ├── (same subfolder structure as sql_server)
+│ 
+│   ├── postgresql/
+│       ├── (same subfolder structure as sql_server)
+│ 
+│   ├── mysql/
+│       ├── (same subfolder structure as sql_server)
+│ 
+│   └── sqlite/
+│       ├── (same subfolder structure as sql_server)
 │
 └── README.md
-```
-
-## 🧠 Learning Outcomes
-
-- Apply relational modeling to real-world educational data
-- Design normalized entity relationships with clear constraints
-- Gain SQL experience through schema and data scripting
-- Present documentation suitable for academic and professional purposes
-
-## ✅ How to Use
-
-1. Review the ERD diagram under the \`ERD/\` folder.
-2. View or edit table definitions in \`schema/create_tables.sql\`.
-3. Load sample data from \`schema/insert_sample_data.sql\`.
-4. Reference \`documentation/data_dictionary.md\` for field-level details.
-5. Connect the database to your preferred RDBMS to test queries and relationships.
