@@ -35,6 +35,10 @@ The system demonstrates core database design concepts such as entity-relationshi
 - Principals manage schools for specific periods with start and optional end dates.  
 - Detailed term- and year-based teaching hours and student results are recorded.  
 
+## 📈 Database Modelling (Entity-Relationship Diagram)
+![Copy of IDDD flowchart7 (1) (6) drawio (7)](https://github.com/user-attachments/assets/b273164e-08fa-4886-a789-9466b3def45c)
+
+
 ## 📁 Project Structure
 
 ```plaintext
