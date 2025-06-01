@@ -1,11 +1,11 @@
 -- SCHOOL TABLE
 CREATE TABLE School (
     schoolId NUMBER PRIMARY KEY,
-    name NVARCHAR2(100) NOT NULL,
-    town NVARCHAR2(100) NOT NULL,
-    street NVARCHAR2(100) NOT NULL,
-    postcode NVARCHAR2(10) NOT NULL,
-    phoneNumber NVARCHAR2(20) NOT NULL
+    name VARCHAR2(100) NOT NULL,
+    town VARCHAR2(100) NOT NULL,
+    street VARCHAR2(100) NOT NULL,
+    postcode VARCHAR2(10) NOT NULL,
+    phoneNumber VARCHAR2(20) NOT NULL
 );
 
 CREATE SEQUENCE seq_school START WITH 1 INCREMENT BY 1;
@@ -20,8 +20,8 @@ END;
 -- SUBJECT TABLE
 CREATE TABLE Subject (
     subjectId NUMBER PRIMARY KEY,
-    subjectTitle NVARCHAR2(100) NOT NULL,
-    subjectType NVARCHAR2(50) NOT NULL
+    subjectTitle VARCHAR2(100) NOT NULL,
+    subjectType VARCHAR2(50) NOT NULL
 );
 
 CREATE SEQUENCE seq_subject START WITH 1 INCREMENT BY 1;
@@ -36,8 +36,8 @@ END;
 -- STUDENT TABLE
 CREATE TABLE Student (
     studentId NUMBER PRIMARY KEY,
-    firstName NVARCHAR2(50) NOT NULL,
-    lastName NVARCHAR2(50) NOT NULL,
+    firstName VARCHAR2(50) NOT NULL,
+    lastName VARCHAR2(50) NOT NULL,
     gender CHAR(1) NOT NULL,
     dateOfBirth DATE NOT NULL,
     schoolId NUMBER NOT NULL,
@@ -56,10 +56,10 @@ END;
 -- TEACHER TABLE
 CREATE TABLE Teacher (
     teacherId NUMBER PRIMARY KEY,
-    firstName NVARCHAR2(50) NOT NULL,
-    lastName NVARCHAR2(50) NOT NULL,
+    firstName VARCHAR2(50) NOT NULL,
+    lastName VARCHAR2(50) NOT NULL,
     gender CHAR(1) NOT NULL,
-    qualifications NVARCHAR2(100) NOT NULL,
+    qualifications VARCHAR2(100) NOT NULL,
     schoolId NUMBER NOT NULL,
     FOREIGN KEY (schoolId) REFERENCES School(schoolId)
 );
@@ -78,7 +78,7 @@ CREATE TABLE TeacherTeachingRecord (
     recordId NUMBER PRIMARY KEY,
     teacherId NUMBER NOT NULL,
     subjectId NUMBER NOT NULL,
-    term NVARCHAR2(20) NOT NULL,
+    term VARCHAR2(20) NOT NULL,
     year NUMBER NOT NULL,
     hoursTaught NUMBER NOT NULL,
     FOREIGN KEY (teacherId) REFERENCES Teacher(teacherId),
@@ -99,10 +99,10 @@ CREATE TABLE SubjectResult (
     resultId NUMBER PRIMARY KEY,
     studentId NUMBER NOT NULL,
     subjectId NUMBER NOT NULL,
-    term NVARCHAR2(20) NOT NULL,
+    term VARCHAR2(20) NOT NULL,
     year NUMBER NOT NULL,
     marks NUMBER(5,2),
-    grade NVARCHAR2(5),
+    grade VARCHAR2(5),
     CONSTRAINT FK_SubjectResult_Student FOREIGN KEY (studentId) REFERENCES Student(studentId),
     CONSTRAINT FK_SubjectResult_Subject FOREIGN KEY (subjectId) REFERENCES Subject(subjectId),
     CONSTRAINT UQ_SubjectResult_Composite UNIQUE (subjectId, studentId, term, year)
@@ -121,8 +121,8 @@ END;
 CREATE TABLE Principal (
     principalId NUMBER PRIMARY KEY,
     schoolId NUMBER NOT NULL,
-    firstName NVARCHAR2(50) NOT NULL,
-    lastName NVARCHAR2(50) NOT NULL,
+    firstName VARCHAR2(50) NOT NULL,
+    lastName VARCHAR2(50) NOT NULL,
     startDate DATE NOT NULL,
     endDate DATE,
     FOREIGN KEY (schoolId) REFERENCES School(schoolId)
