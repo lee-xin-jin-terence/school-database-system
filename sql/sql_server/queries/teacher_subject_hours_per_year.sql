@@ -3,11 +3,11 @@
 -- Use Case: Useful for evaluating teacher workload and subject coverage annually.
 
 SELECT
-    t.teacherId,
-    t.firstName,
-    t.lastName,
-    s.subjectTitle,
-    ttr.year,
+    t.teacherId AS teacherId,
+    t.firstName AS firstName,
+    t.lastName AS lastName,
+    s.subjectTitle AS subjectTitle,
+    ttr.year AS year,
     SUM(ttr.hoursTaught) AS totalHours
 FROM
     Teacher t
