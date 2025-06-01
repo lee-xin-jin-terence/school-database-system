@@ -56,7 +56,7 @@
 | `firstName`         | VARCHAR2(50)      | NOT NULL                                           | Teacher's first name          |
 | `lastName`          | VARCHAR2(50)      | NOT NULL                                           | Teacher's last name           |
 | `gender`            | CHAR(1)           | NOT NULL                                           | Gender of the teacher ('F')   |
-| `qualifications`    | VARCHAR2(100)     | NOT NULL                                           | Teacher's qualifications      |
+| `qualification`     | VARCHAR2(100)     | NOT NULL                                           | Teacher's qualifications      |
 | `schoolId`          | NUMBER            | NOT NULL, FOREIGN KEY REFERENCES `School(schoolId)` | Associated school ID          |
 
 ---
