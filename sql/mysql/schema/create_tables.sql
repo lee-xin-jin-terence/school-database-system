@@ -28,7 +28,7 @@ CREATE TABLE Teacher (
     firstName VARCHAR(50) NOT NULL,
     lastName VARCHAR(50) NOT NULL,
     gender CHAR(1) NOT NULL,
-    qualifications VARCHAR(100) NOT NULL,
+    qualification VARCHAR(100) NOT NULL,
     schoolId INT NOT NULL,
     FOREIGN KEY (schoolId) REFERENCES School(schoolId)
 );
