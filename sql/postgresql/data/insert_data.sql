@@ -2,7 +2,7 @@
 
 INSERT INTO School (name, town, street, postcode, phoneNumber) VALUES
 ('Greenfield Secondary School', 'Bedok', '123 East Avenue', '460123', '6123-4567'),
-('North Ridge High School', 'Woodlands', '456 North Road', '738456', '6892-1134'),
+('North Ridge High School', 'Woodlands', '456 North Road', '738456', '6892-1134'),qua
 ('Sunshine Primary School', 'Tampines', '789 Sunshine Blvd', '529789', '6345-9988'),
 ('Westlake International School', 'Bukit Batok', '321 Hillview Drive', '659321', '6899-7744'),
 ('Meridian Secondary School', 'Pasir Ris', '987 Meridian Walk', '519987', '6587-2233');
@@ -64,7 +64,7 @@ INSERT INTO Student (firstName, lastName, gender, dateOfBirth, schoolId) VALUES
 
 
 
-INSERT INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES
+INSERT INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES
 ('James', 'Lim', 'M', 'B.Ed, M.Ed', 1),
 ('Aisha', 'Yusof', 'F', 'B.Sc, PGDE', 2),
 ('Rajesh', 'Nair', 'M', 'M.Sc, B.Ed', 3),
