@@ -64,21 +64,21 @@ SELECT * FROM dual;
 
 
 INSERT ALL
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('James', 'Lim', 'M', 'B.Ed, M.Ed', 1)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Aisha', 'Yusof', 'F', 'B.Sc, PGDE', 2)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Rajesh', 'Nair', 'M', 'M.Sc, B.Ed', 3)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Chloe', 'Tan', 'F', 'B.A., PGDE', 1)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Imran', 'Abdullah', 'M', 'B.Ed', 2)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Siti', 'Zainal', 'F', 'B.A., M.Ed', 3)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Marcus', 'Goh', 'M', 'B.Sc', 4)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Anita', 'Menon', 'F', 'M.A., PGDE', 5)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Vinod', 'Das', 'M', 'PhD, B.Ed', 5)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Wei Ling', 'Ong', 'F', 'B.Ed', 1)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Daniel', 'Sim', 'M', 'M.Sc', 4)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Meena', 'Ravi', 'F', 'B.Ed, M.Ed', 2)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Hakim', 'Rahmat', 'M', 'B.Sc, PGDE', 3)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Serene', 'Ng', 'F', 'B.Ed', 5)
-    INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES ('Arjun', 'Reddy', 'M', 'B.Tech, M.Ed', 4)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('James', 'Lim', 'M', 'B.Ed, M.Ed', 1)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Aisha', 'Yusof', 'F', 'B.Sc, PGDE', 2)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Rajesh', 'Nair', 'M', 'M.Sc, B.Ed', 3)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Chloe', 'Tan', 'F', 'B.A., PGDE', 1)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Imran', 'Abdullah', 'M', 'B.Ed', 2)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Siti', 'Zainal', 'F', 'B.A., M.Ed', 3)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Marcus', 'Goh', 'M', 'B.Sc', 4)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Anita', 'Menon', 'F', 'M.A., PGDE', 5)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Vinod', 'Das', 'M', 'PhD, B.Ed', 5)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Wei Ling', 'Ong', 'F', 'B.Ed', 1)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Daniel', 'Sim', 'M', 'M.Sc', 4)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Meena', 'Ravi', 'F', 'B.Ed, M.Ed', 2)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Hakim', 'Rahmat', 'M', 'B.Sc, PGDE', 3)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Serene', 'Ng', 'F', 'B.Ed', 5)
+    INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES ('Arjun', 'Reddy', 'M', 'B.Tech, M.Ed', 4)
 SELECT * FROM dual;
 
 
