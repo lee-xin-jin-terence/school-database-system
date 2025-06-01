@@ -4,11 +4,11 @@
 
 
 SELECT
-    t.teacherId,
-    t.firstName,
-    t.lastName,
-    sub.subjectId,
-    sub.subjectTitle,
+    t.teacherId AS teacherId,
+    t.firstName AS firstName,
+    t.lastName AS lastName,
+    sub.subjectId AS subjectId,
+    sub.subjectTitle AS subjectTitle,
     SUM(ttr.hoursTaught) AS totalHoursTaught 
 FROM 
     Teacher t 
