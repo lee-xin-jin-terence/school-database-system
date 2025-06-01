@@ -55,8 +55,8 @@
 | `teacherId`         | INTEGER       | PRIMARY KEY, AUTOINCREMENT                           | Unique ID for each teacher    |
 | `firstName`         | TEXT          | NOT NULL                                             | Teacher's first name          |
 | `lastName`          | TEXT          | NOT NULL                                             | Teacher's last name           |
-| `gender`            | TEXT          | NOT NULL, CHECK(length(gender) = 1)                  | Gender of the teacher ('F')   |
-| `qualifications`    | TEXT          | NOT NULL                                             | Teacher's qualifications      |
+| `gender`            | TEXT          | NOT NULL, CHECK(length(gender) = 1)                  | Gender of the teacher ('M/F')  |
+| `qualification`     | TEXT          | NOT NULL                                             | Teacher's qualifications     |
 | `schoolId`          | INTEGER       | NOT NULL, FOREIGN KEY REFERENCES `School(schoolId)`  | Associated school ID          |
 
 ---
