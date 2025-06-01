@@ -3,17 +3,31 @@
 -- Use Case: Useful for identifying highly engaged teachers or allocating teaching resources effectively.
 
 
-SELECT TOP 5
-    t.teacherId,
-    t.firstName,
-    t.lastName,
-    SUM(ttr.hoursTaught) AS totalHours,
-    ttr.year
+WITH RankedTeachers AS (
+    SELECT
+        t.teacherId,
+        t.firstName,
+        t.lastName,
+        ttr.year,
+        SUM(ttr.hoursTaught) AS totalHours,
+        ROW_NUMBER() OVER (PARTITION BY ttr.year ORDER BY SUM(ttr.hoursTaught) DESC) AS rn
+    FROM
+        Teacher t
+    JOIN
+        TeacherTeachingRecord ttr ON t.teacherId = ttr.teacherId
+    GROUP BY
+        t.teacherId, t.firstName, t.lastName, ttr.year
+)
+SELECT
+    teacherId,
+    firstName,
+    lastName,
+    year,
+    totalHours
 FROM
-    Teacher t
-JOIN
-    TeacherTeachingRecord ttr ON t.teacherId = ttr.teacherId
-GROUP BY
-    t.teacherId, t.firstName, t.lastName, ttr.year
+    RankedTeachers
+WHERE
+    rn <= 5
 ORDER BY
-    totalHours DESC;
+    year, totalHours DESC;
+
