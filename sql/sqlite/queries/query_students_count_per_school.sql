@@ -3,7 +3,7 @@
 -- Use Case: Helps administration track student population size by school.
 
 SELECT 
-    sc.schoolId,
+    sc.schoolId AS schoolId,
     sc.name AS schoolName,
     COUNT(s.studentId) AS totalStudents
 FROM 
