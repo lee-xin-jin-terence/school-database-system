@@ -3,7 +3,7 @@
 -- Use Case: Useful for identifying subjects with higher or lower student performance.
 
 SELECT 
-    sub.subjectTitle,
+    sub.subjectTitle as subjectTitle,
     ROUND(AVG(sr.marks), 2) AS averageMarks
 FROM 
     SubjectResult sr
