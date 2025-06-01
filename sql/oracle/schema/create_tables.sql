@@ -1,11 +1,11 @@
 -- SCHOOL TABLE
 CREATE TABLE School (
     schoolId NUMBER PRIMARY KEY,
-    name VARCHAR2(100) NOT NULL,
-    town VARCHAR2(100) NOT NULL,
-    street VARCHAR2(100) NOT NULL,
-    postcode VARCHAR2(10) NOT NULL,
-    phoneNumber VARCHAR2(20) NOT NULL
+    name NVARCHAR2(100) NOT NULL,
+    town NVARCHAR2(100) NOT NULL,
+    street NVARCHAR2(100) NOT NULL,
+    postcode NVARCHAR2(10) NOT NULL,
+    phoneNumber NVARCHAR2(20) NOT NULL
 );
 
 CREATE SEQUENCE seq_school START WITH 1 INCREMENT BY 1;
@@ -15,13 +15,13 @@ FOR EACH ROW
 BEGIN
     :NEW.schoolId := seq_school.NEXTVAL;
 END;
-
+/
 
 -- SUBJECT TABLE
 CREATE TABLE Subject (
     subjectId NUMBER PRIMARY KEY,
-    subjectTitle VARCHAR2(100) NOT NULL,
-    subjectType VARCHAR2(50) NOT NULL
+    subjectTitle NVARCHAR2(100) NOT NULL,
+    subjectType NVARCHAR2(50) NOT NULL
 );
 
 CREATE SEQUENCE seq_subject START WITH 1 INCREMENT BY 1;
@@ -31,13 +31,13 @@ FOR EACH ROW
 BEGIN
     :NEW.subjectId := seq_subject.NEXTVAL;
 END;
-
+/
 
 -- STUDENT TABLE
 CREATE TABLE Student (
     studentId NUMBER PRIMARY KEY,
-    firstName VARCHAR2(50) NOT NULL,
-    lastName VARCHAR2(50) NOT NULL,
+    firstName NVARCHAR2(50) NOT NULL,
+    lastName NVARCHAR2(50) NOT NULL,
     gender CHAR(1) NOT NULL,
     dateOfBirth DATE NOT NULL,
     schoolId NUMBER NOT NULL,
@@ -51,15 +51,15 @@ FOR EACH ROW
 BEGIN
     :NEW.studentId := seq_student.NEXTVAL;
 END;
-
+/
 
 -- TEACHER TABLE
 CREATE TABLE Teacher (
     teacherId NUMBER PRIMARY KEY,
-    firstName VARCHAR2(50) NOT NULL,
-    lastName VARCHAR2(50) NOT NULL,
+    firstName NVARCHAR2(50) NOT NULL,
+    lastName NVARCHAR2(50) NOT NULL,
     gender CHAR(1) NOT NULL,
-    qualifications VARCHAR2(100) NOT NULL,
+    qualifications NVARCHAR2(100) NOT NULL,
     schoolId NUMBER NOT NULL,
     FOREIGN KEY (schoolId) REFERENCES School(schoolId)
 );
@@ -71,14 +71,14 @@ FOR EACH ROW
 BEGIN
     :NEW.teacherId := seq_teacher.NEXTVAL;
 END;
-
+/
 
 -- TEACHER TEACHING RECORD TABLE
 CREATE TABLE TeacherTeachingRecord (
     recordId NUMBER PRIMARY KEY,
     teacherId NUMBER NOT NULL,
     subjectId NUMBER NOT NULL,
-    term VARCHAR2(20) NOT NULL,
+    term NVARCHAR2(20) NOT NULL,
     year NUMBER NOT NULL,
     hoursTaught NUMBER NOT NULL,
     FOREIGN KEY (teacherId) REFERENCES Teacher(teacherId),
@@ -92,17 +92,17 @@ FOR EACH ROW
 BEGIN
     :NEW.recordId := seq_ttr.NEXTVAL;
 END;
-
+/
 
 -- SUBJECT RESULT TABLE
 CREATE TABLE SubjectResult (
     resultId NUMBER PRIMARY KEY,
     studentId NUMBER NOT NULL,
     subjectId NUMBER NOT NULL,
-    term VARCHAR2(20) NOT NULL,
+    term NVARCHAR2(20) NOT NULL,
     year NUMBER NOT NULL,
     marks NUMBER(5,2),
-    grade VARCHAR2(5),
+    grade NVARCHAR2(5),
     CONSTRAINT FK_SubjectResult_Student FOREIGN KEY (studentId) REFERENCES Student(studentId),
     CONSTRAINT FK_SubjectResult_Subject FOREIGN KEY (subjectId) REFERENCES Subject(subjectId),
     CONSTRAINT UQ_SubjectResult_Composite UNIQUE (subjectId, studentId, term, year)
@@ -115,14 +115,14 @@ FOR EACH ROW
 BEGIN
     :NEW.resultId := seq_result.NEXTVAL;
 END;
-
+/
 
 -- PRINCIPAL TABLE
 CREATE TABLE Principal (
     principalId NUMBER PRIMARY KEY,
     schoolId NUMBER NOT NULL,
-    firstName VARCHAR2(50) NOT NULL,
-    lastName VARCHAR2(50) NOT NULL,
+    firstName NVARCHAR2(50) NOT NULL,
+    lastName NVARCHAR2(50) NOT NULL,
     startDate DATE NOT NULL,
     endDate DATE,
     FOREIGN KEY (schoolId) REFERENCES School(schoolId)
@@ -135,4 +135,4 @@ FOR EACH ROW
 BEGIN
     :NEW.principalId := seq_principal.NEXTVAL;
 END;
-
+/
