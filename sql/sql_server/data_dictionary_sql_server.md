@@ -64,7 +64,7 @@ _Last updated: 2025-06-01_
 | `firstName`      | `VARCHAR(50)`    | NOT NULL                                         | Teacher's first name      |
 | `lastName`       | `VARCHAR(50)`    | NOT NULL                                         | Teacher's last name       |
 | `gender`         | `CHAR(1)`        | NOT NULL                                         | Gender of the teacher ('M'/'F') |
-| `qualifications` | `VARCHAR(100)`   | NOT NULL                                         | Teacher's qualifications  |
+| `qualification`  | `VARCHAR(100)`   | NOT NULL                                         | Teacher's qualifications  |
 | `schoolId`       | `INT`            | NOT NULL, FOREIGN KEY REFERENCES `School(schoolId)` | Associated school ID      |
 
 ---
