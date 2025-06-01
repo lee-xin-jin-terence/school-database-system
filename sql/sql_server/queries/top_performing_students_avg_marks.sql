@@ -9,7 +9,7 @@ WITH StudentAverages AS (
         s.lastName,
         sr.year,
         AVG(sr.marks) AS averageMarks,
-        ROW_NUMBER() OVER (PARTITION BY sr.year ORDER BY AVG(sr.marks) DESC) AS rank
+        ROW_NUMBER() OVER (PARTITION BY sr.year ORDER BY AVG(sr.marks) DESC) AS rn
     FROM
         Student s
     JOIN
@@ -26,4 +26,4 @@ SELECT
 FROM
     StudentAverages
 WHERE
-    rank <= 5;
+    rn <= 5;
