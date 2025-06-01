@@ -15,7 +15,7 @@ FOR EACH ROW
 BEGIN
     :NEW.schoolId := seq_school.NEXTVAL;
 END;
-/
+
 
 -- SUBJECT TABLE
 CREATE TABLE Subject (
@@ -31,7 +31,7 @@ FOR EACH ROW
 BEGIN
     :NEW.subjectId := seq_subject.NEXTVAL;
 END;
-/
+
 
 -- STUDENT TABLE
 CREATE TABLE Student (
@@ -51,7 +51,7 @@ FOR EACH ROW
 BEGIN
     :NEW.studentId := seq_student.NEXTVAL;
 END;
-/
+
 
 -- TEACHER TABLE
 CREATE TABLE Teacher (
@@ -71,7 +71,7 @@ FOR EACH ROW
 BEGIN
     :NEW.teacherId := seq_teacher.NEXTVAL;
 END;
-/
+
 
 -- TEACHER TEACHING RECORD TABLE
 CREATE TABLE TeacherTeachingRecord (
@@ -92,7 +92,7 @@ FOR EACH ROW
 BEGIN
     :NEW.recordId := seq_ttr.NEXTVAL;
 END;
-/
+
 
 -- SUBJECT RESULT TABLE
 CREATE TABLE SubjectResult (
@@ -115,7 +115,7 @@ FOR EACH ROW
 BEGIN
     :NEW.resultId := seq_result.NEXTVAL;
 END;
-/
+
 
 -- PRINCIPAL TABLE
 CREATE TABLE Principal (
@@ -135,4 +135,4 @@ FOR EACH ROW
 BEGIN
     :NEW.principalId := seq_principal.NEXTVAL;
 END;
-/
+
