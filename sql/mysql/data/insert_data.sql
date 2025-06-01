@@ -256,7 +256,7 @@ INSERT INTO SubjectResult (studentId, subjectId, term, year, marks, grade) VALUE
 
 
 
-INSERT INTO Teacher (firstName, lastName, gender, qualifications, schoolId) VALUES
+INSERT INTO Teacher (firstName, lastName, gender, qualification, schoolId) VALUES
 ('James', 'Lim', 'M', 'B.Ed, M.Ed', 1),
 ('Aisha', 'Yusof', 'F', 'B.Sc, PGDE', 2),
 ('Rajesh', 'Nair', 'M', 'M.Sc, B.Ed', 3),
