@@ -36,7 +36,7 @@ The system demonstrates core database design concepts such as entity-relationshi
 - Detailed term- and year-based teaching hours and student results are recorded.  
 
 ## 📈 Database Modelling (Entity-Relationship Diagram)
-![Copy of IDDD flowchart7 (1) (6) drawio (7)](https://github.com/user-attachments/assets/b273164e-08fa-4886-a789-9466b3def45c)
+![school-database-system drawio](https://github.com/user-attachments/assets/805e8c66-75e0-42c1-8e4e-5a95ba411e99)
 
 
 ## 📁 Project Structure
